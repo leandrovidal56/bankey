@@ -35,7 +35,8 @@
       "react-hooks/exhaustive-deps": "warn",
       "no-use-before-define": "off",
       "react/react-in-jsx-scope": "off",
-      "react/jsx-filename-extension": [ 1, {"extensions": [".tsx"]}],
+      // "react/jsx-filename-extension": [ 1, {"extensions": [".js", ".tsx"]}],
+      "react/jsx-filename-extension": "off",
       "import/extensions": [
         "error",
         "ignorePackages",
@@ -48,7 +49,10 @@
 
     "settings": {
       "import/resolver": {
-        "typescript": {}
+        "typescript": {},
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
       }
     }
 }

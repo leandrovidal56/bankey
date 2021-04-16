@@ -1,16 +1,22 @@
 import React from 'react';
-import { useNavigation } from '@react-navigation/native';
+import { StatusBar, Image } from 'react-native';
+import 'react-native-gesture-handler';
 
-import Button from '../../components/Button';
+import { StyledView, Text, SubText } from './styles';
 
-import Container from './styles';
+import Logo from '../../assets/bro.svg';
 
 const Home: React.FC = () => {
-  const navigation = useNavigation();
   return (
-    <Container>
-      <Button onPress={() => navigation.navigate('Splash')}>Splash</Button>
-    </Container>
+    <>
+      <StatusBar barStyle="light-content" />
+      <StyledView>
+        <Text>Bankey</Text>
+        {/* <Button onPress={() => navigation.navigate('Splash')}>Splash</Button> */}
+        <SubText>Your friendly bank</SubText>
+        <Image source={Logo} />
+      </StyledView>
+    </>
   );
 };
 

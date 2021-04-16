@@ -8,7 +8,7 @@ const Splash: React.FC = () => {
   const navigation = useNavigation();
   return (
     <Container>
-      <Button onPress={() => navigation.goBack()}>Home</Button>
+      <Button onPress={() => navigation.navigate('Home')}>Home</Button>
     </Container>
   );
 };

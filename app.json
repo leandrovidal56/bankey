@@ -1,4 +1,5 @@
 {
   "name": "boilerplate_react_native",
-  "displayName": "boilerplate_react_native"
+  "displayName": "boilerplate_react_native",
+  "include": ["src/components", "src/custom.d.ts"]
 }
